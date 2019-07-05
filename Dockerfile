@@ -19,7 +19,8 @@ RUN mkdir $CLIOPATRIA_DIR
 WORKDIR $CLIOPATRIA_DIR
 
 ENV CLIOPATRIA_REPO https://github.com/ClioPatria/ClioPatria.git
-ENV CLIOPATRIA_REF  add57aa
+ENV CLIOPATRIA_REF  218c59
+
 RUN \
  git clone --recursive $CLIOPATRIA_REPO $CLIOPATRIA_DIR; \
  git checkout $CLIOPATRIA_REF
